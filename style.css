@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #fbeaff, #e3f6f5);
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #8245d6;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 15px;
+  background: #fff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c084fc;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #a855f7;
+}
+
+.business-card {
+  margin-top: 25px;
+  padding: 20px;
+  border: 2px solid #e0c3fc;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: var(--card-bg, #fff9fc);
+  transition: background-color 0.3s ease;
+  color: var(--card-font, #333);
+}
+
+
+.business-card img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+}

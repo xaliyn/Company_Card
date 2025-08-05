@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business card :3 </title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1> Business card Generator </h1>
+
+    <form id="cardForm">
+      <label>Please upload your logo:
+        <input type="file" id="logoInput" accept="image/*" />
+      </label>
+
+      <label>Company Name:
+        <input type="text" id="companyName" placeholder="Your Company Name" required />
+      </label>
+
+      <label>Address:
+        <input type="text" id="address" placeholder="Berlin, Germany Kreuzberg" required />
+      </label>
+
+      <label>Email:
+        <input type="email" id="contact" placeholder="xaliyn@lunasgarden.com" required />
+      </label>
+
+      <label>Phone:
+        <input type="tel" id="phone" placeholder="+97595575417" required />
+      </label>
+
+      <label>Card Color Theme:
+        <select id="bgColor">
+          <option value="#fff9fc">Pink Cream</option>
+          <option value="#fce4ec">Light Pink</option>
+          <option value="#06402B">Dark Green</option>
+          <option value="#f0f4c3">Light Green</option>
+          <option value="#c5cae9">Light Blue</option>
+          <option value="#e0f7fa">Mint Blue</option>
+          <option value="#fefae0">Pastel Yellow</option>
+          <option value="#f3e8ff">Lavender</option>
+          <option value="#ffffff">White</option>
+          <option value="#000000">Black</option>
+          <option value="#f5f5f5">Light Gray</option>
+        </select>
+      </label>
+
+    <label>Font Color:
+  <input type="color" id="fontColor" value="#333333" />
+    </label>
+
+
+      <button type="button" onclick="generateCard()"> Generate Card </button>
+    </form>
+
+    <div id="cardOutput" style="display: none;">
+      <div id="card" class="business-card">
+        <img id="cardLogo" alt="Logo" />
+        <h2 id="cardCompanyName"></h2>
+        <p id="cardAddress"></p>
+        <p id="cardContact"></p>
+      </div>
+      <button onclick="downloadCard()"> Download as PNG</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
