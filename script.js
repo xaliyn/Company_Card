@@ -1,5 +1,6 @@
 function generateCard() {
   const name = document.getElementById("companyName").value;
+  const personName = document.getElementById("personName").value;
   const address = document.getElementById("address").value;
   const email = document.getElementById("contact").value;
   const phone = document.getElementById("phone").value;
@@ -7,7 +8,7 @@ function generateCard() {
   const fontColor = document.getElementById("fontColor").value;
   const logoFile = document.getElementById("logoInput").files[0];
 
-  if (!name || !address || !email || !phone) {
+  if (!name || !address || !email || !phone || !personName) {
     alert("Please fill in all fields!");
     return;
   }
@@ -21,6 +22,7 @@ function generateCard() {
   }
 
   document.getElementById("cardCompanyName").textContent = name;
+  document.getElementById("cardPersonName").textContent = personName;
   document.getElementById("cardAddress").textContent = address;
   document.getElementById("cardContact").textContent = ` ${email} |  ${phone}`;
 

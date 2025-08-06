@@ -20,6 +20,10 @@
         <input type="text" id="companyName" placeholder="Your Company Name" required />
       </label>
 
+      <Label>Your name:
+        <input type="text" id="personName" placeholder="Your Name" required />
+      </Label>
+
       <label>Address:
         <input type="text" id="address" placeholder="Berlin, Germany Kreuzberg" required />
       </label>
@@ -49,7 +53,20 @@
       </label>
 
     <label>Font Color:
-  <input type="color" id="fontColor" value="#333333" />
+  <!--<input type="color" id="fontColor" value="#333333" /> -->
+  <select id="fontColor">
+    <option value="#333333">Dark Gray</option>
+    <option value="#ffffff">White</option>
+    <option value="#000000">Black</option>
+    <option value="#ff0000">Red</option>
+    <option value="#FFB6C1">Light Pink</option>
+    <option value="#0000FF">Blue</option>
+    <option value="#008000">Green</option>
+    <option value="#FFFF00">Yellow</option>
+    <option value="#800080">Purple</option>
+    <option value="#FFA500">Orange</option>
+    <option value="#808080">Gray</option>
+  </select>
     </label>
 
 
@@ -60,6 +77,7 @@
       <div id="card" class="business-card">
         <img id="cardLogo" alt="Logo" />
         <h2 id="cardCompanyName"></h2>
+        <h3 id="cardPersonName"></h3>
         <p id="cardAddress"></p>
         <p id="cardContact"></p>
       </div>
